@@ -5,7 +5,9 @@ function onReady(){
 
     $( '#toDoList' ).on( 'click', '.deleteTask', deleteTask );
 
-    $( '#toDoList' ).on( 'click', '.completedtask', completeTask );
+    $( '#toDoList' ).on( 'click', '.completedtask', completeTask);
+
+    // $( '#toDoList' ).on( 'click', '.completedtask', turnGreen);
 
 
 }//end onReady
@@ -21,16 +23,18 @@ function getList(){
         el.empty();
         // append each message to DOM
         for( let i=0; i< response.length; i++ ){
-            let appendString= `<li>${ response[i].task }: completed? ${ response[i].completed }`
+            let appendString= ``
 
-            if( !response[i].completed ){
-                appendString += ` <button class="completedtask" data-id="${ response[i].id }">completed</button>`;
-            }
-            appendString += `<button class="deleteTask" data-id="${ response[i].id }">delete</button>
-            </li>`;
+        if( response[i].completed === false){
+            appendString+= `<li> ${response[i].task}: completed? ${ response[i].completed } <button class="completedtask" data-id="${ response[i].id }">completed</button>`;}
+        else {appendString+= `<li class=completed> ${response[i].task}: completed? ${ response[i].completed }`}
+        
+            appendString+=`<button class="deleteTask" data-id="${ response[i].id }">delete</button></li>`;
 
-            el.append( appendString )
-        }
+
+        el.append( appendString ) }
+
+
     }).catch( function( err ){
         console.log( err );
         alert( 'bad get function' );
@@ -88,3 +92,7 @@ function completeTask(){
         alert( 'error completing task');
     })
 }
+
+// function turnGreen(){
+//     $(this).parent().css(`background-color`,`greenyellow`);
+// };

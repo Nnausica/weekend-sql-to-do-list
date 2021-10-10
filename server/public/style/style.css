@@ -1,0 +1,23 @@
+body { background-color: cadetblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#title {
+    border-style: groove;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    text-align: center
+}
+
+#inputStuff { text-align:center
+
+}
+
+#toDoList{ border-style: groove;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-right: 10px;
+}
+
+.completed{background-color:greenyellow}
