@@ -1,6 +1,8 @@
 $(document).ready(onReady);
 
 function onReady(){
+    $(getList)
+
     $(`#addTask`).on(`click`, sendList);
 
     $( '#toDoList' ).on( 'click', '.deleteTask', deleteTask );

@@ -10,9 +10,16 @@ body { background-color: cadetblue;
     text-align: center
 }
 
+#toDoItem{
+    text-align:center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 #inputStuff { text-align:center
 
 }
+
 
 #toDoList{ border-style: groove;
 padding-top: 10px;
