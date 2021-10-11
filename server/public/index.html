@@ -22,34 +22,31 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-4">
-        </div>
-        <div class="col-md-4">
-            <input type="text" id="toDoItem" placeholder="task">
-        </div>
-        <div class="col-md-4">
-        </div>
-    </div>
+    <!-- <div class="input-group mb-3">
+      <input type="text" id="toDoItem" class="form-control" aria-label="Text input with dropdown button">
+      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Completed?</button>
+      <ul class="dropdown-menu dropdown-menu-end" id="completed">
+        <li><a class="dropdown-item" id="addTask" href="#">Yes</a></li>
+        <li><a class="dropdown-item" id="addTask" href="#">No</a></li>
+      </ul>
+    </div> -->
 
-    <div class="row">
-        <div class="col-md-2">
-        </div>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" id="toDoItem" placeholder="Add a task to complete" aria-label="Add a task to complete" aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" id="addTask" type="button" id="button-addon2">Add Task</button>
+      </div>
+    
 
-        <div class="col-md-3">
-            <p>completed?</p>
-        </div>
+      <p1>Completed?</p1>
+        <select id="completed" placeholder="completed?">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+        </select>
+        
 
-        <div class="col-md-2">
-            <select id="completed" placeholder="completed?">
-                <option value="yes">yes</option>
-                <option value="no">no</option>
-              </select>
-        </div>
-
-        <div class="col-md-3">
+        <!-- <div class="col-md-3">
             <button id="addTask" type="button" class="btn btn-outline-primary">Add Task</button>
-        </div>  
+        </div>   -->
 
         <div class="col-md-2">
         </div>
@@ -57,5 +54,7 @@
     
     <ul id="toDoList"></ul>
 </div>
+
+
 </body>
 </html>

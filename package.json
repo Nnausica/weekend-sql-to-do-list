@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/Nnausica/weekend-sql-to-do-list#readme",
   "dependencies": {
+    "bootstrap-npm": "^4.1.0",
     "express": "^4.17.1",
-    "pg": "^8.7.1"
+    "pg": "^8.7.1",
+    "start": "^5.1.0"
   }
 }
