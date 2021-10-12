@@ -8,27 +8,30 @@ Your project description goes here. What problem did you solve? How did you solv
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
 
-database needs- name it `weekend-to-do-app`
--task(text)
--complete(boolean)
+x   database needs- name it `weekend-to-do-app`
+    -task(text)
+    -complete(boolean)
 
-get route
-post route
-delete route
+x   get route
+x   post route
+x   delete route
+x   put route
 
 
-allow user to enter task
-add complete button
--visual change on click (CSS probs)
--complete button leaves
+x   allow user to enter task
+x   add complete button
+    -visual change on click (CSS probs)
+    -complete button leaves
 
-add delete button
--delete from list
--delete from database
+x   add delete button
+    -delete from list
+    -delete from database
 
-Make it pretty
-background color of the page
-font family and size
-text color & or background color of tasks *to show whether or not they have been completed*
+x   Make it pretty(sorta)
+x   background color of the page
+x   font family and size
+x   text color & or background color of tasks *to show whether or not they have been completed*
 
-add SQL commands to database.sql
+x   add SQL commands to database.sql
+
+-Added some bootstrap buttons/styling, but not sure that I am using that correctly.

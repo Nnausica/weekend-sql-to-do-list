@@ -8,6 +8,7 @@ const { query } = require('express');
 //uses
 app.use( express.static('server/public'));
 
+
 //static server file
 app.use(bodyParser.urlencoded({ extended: true }));
 

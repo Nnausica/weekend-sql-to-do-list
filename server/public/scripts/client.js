@@ -29,6 +29,7 @@ function getList(){
 
         if( response[i].completed === false){
             appendString+= `<li> ${response[i].task}: completed? ${ response[i].completed } <button class="completedtask" data-id="${ response[i].id }">completed</button>`;}
+            
         else {appendString+= `<li class=completed> ${response[i].task}: completed? ${ response[i].completed }`}
         
             appendString+=`<button class="deleteTask" data-id="${ response[i].id }">delete</button></li>`;
